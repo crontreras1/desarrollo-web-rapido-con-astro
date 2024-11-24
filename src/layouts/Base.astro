@@ -13,8 +13,9 @@ const { frontmatter } = Astro.props
     <title>{ frontmatter.title }</title>
 </head>
 <body>
-    <Header title={ frontmatter.title }/>
-    <main class="container mx-auto p4 prose">
+    <main class="container max-w-screen-xl mx-auto p4 prose">
+        <Header title={ frontmatter.title }/>
+        
         <slot />
     </main>
 </body>
